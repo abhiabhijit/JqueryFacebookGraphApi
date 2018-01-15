@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Facebook Info</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="Find your facebook pge details in this page using Facebook Graph API">
+  
+    <!-- stylesheet css -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="fbcss.css">
+    
+  </head>
+<body>
+  <section>
+    <div class="container">
+      <div align="center" id="facebook">
+        <h1 > Facebook Graph Explorer </h1>
+        <div class="form-group">
+          <div class="input-group" style="padding: 50px 10px 0 20px">
+            <span class="input-group-addon">API</span>
+            <input type="text" class="form-control" id="apiid" placeholder="Enter your Access Token ">
+          </div>
+          <br>
+    <br>
+          <button id="facebookBtn1" class="btn btn-primary " type="button" > Facebook Profile info</button>             
+          <button id="facebookBtn2" class="btn btn-primary " type="button">Facebook Feed info</button>
+        </div>
+      </div>
+    </div>
+ <div class="col-md-8 col-md-offset-2" id="Facebookprofile">
+    <div class="profile  clearfix" >                            
+        <div class="image" >
+            <img  class="img-cover myCoverPic img-responsive">
+        </div>                            
+        <div class="user clearfix" >
+            <div class="avatar">
+                <img  class="img-thumbnail img-profile myProfilePic img-responsive fb-image-profile thumbnail">
+            </div>                                
+            <h2> <span id="myName"></span></h2> 
+
+                                                                                                            
+        </div>                          
+        <div class="col-md-8 col-sm-12 col-lg-8 info" >
+                <div class="col-md-offset-4" id="basic" style="text-align: center;">
+                  <h2 class="dark-box box-hover">About Me</h2>
+                  <br />
+                  <p>Firstname : <span id="myFirstName"></span></p>
+                  <p>Lastname : <span id="myLastName"></span></p>
+                  <p>Facebook Profile ID  <span id="myProfileId"></span></p>
+                  <p>Gender : <span id="myGender"></span></p>
+                  <h2 class="dark-box box-hover">My Birthday</h2>
+                  <br />
+                  <p>Birthday : <span id="myBirthday"></span></p>
+                  <h2 class="dark-box box-hover">Languages Known</h2>
+                  <br />
+                  <p>Languages : <span id="myLanguage"></span></p>
+                  <h2 class="dark-box box-hover">Hometown</h2>
+                  <br />
+                  <p>Home Town : <span id="myHomeTown"></span></p>
+                  <h2 class="dark-box box-hover">Work</h2>
+                  <br />
+                  <p>Work : <span id="myWork"></span></p>
+                  <h2 class="dark-box box-hover">Education</h2>
+                  <br />
+                  <p>Education : <span id="myEducation"></span></p>
+                  <h2 class="dark-box box-hover">Relationship Status</h2>
+                  <br />
+                  <p>Relationship Status : <span id="myRelation"></span></p>
+                  <h2 class="dark-box box-hover">Family Relations</h2>
+                  <br />
+                  <p>Family members : <span id="myFamily"></span></p></p>
+                  <h2 class="dark-box box-hover">Contact me</h2>
+                  <br />
+                  <p>Email : <span id="myEmail" style="color: #3366CC"></span></p>
+                  <p>Websites : <span id="myWebsite" style="color: #3366CC"></span></p>
+
+                </div>
+      </div>
+      </div>
+     
+
+    </div>
+
+    <div class="col-md-8 col-md-offset-2" id="Facebookfeed">
+    <div class="profile  clearfix" >                            
+        <div class="image" >
+            <img  class="img-cover myCoverPic img-responsive">
+        </div>                            
+        <div class="user clearfix" >
+            <div class="avatar">
+                <img  class="img-thumbnail img-profile myProfilePic img-responsive fb-image-profile thumbnail">
+            </div>                                
+            <h2> <span id="myName2"></span></h2>                                
+            
+           </div>
+         </div>
+            <div  id="feed"></div>
+       </div>
+
+
+       <div id="goBackBtn" class="row" href="myindex.html" style="text-align:center;">
+          <button class="btn-responsive btn-primary btn"><h4>Go Back to Home page</h4></button>
+        </div>
+</section>
+
+                
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+  
+
+</body>
